@@ -5,7 +5,7 @@ import React, { useState, createContext } from "react";
 
 const videoContext = createContext(null);
 
-const VideoContextProvider = ({ children }: any) => {
+const VideoContextProvider = ({ children }) => {
   const [videoList, setVideoList] = useState(videoDetails);
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
 
