@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Beach",
+    "src": "beach.mp4",
+    "thumbnail": "beach.JPG",
+    "views": "1.3k",
+    "date": "May 27, 2022",
+    "creator": "Kathy Mars",
+    "playDuration": 0
+  },
+  {
+    "id": 2,
+    "title": "Dessert",
+    "src": "dessert.mp4",
+    "thumbnail": "dessert.JPG",
+    "views": "1.6k",
+    "date": "Oct 12, 2012",
+    "creator": "Rihanna Mathew",
+    "playDuration": 0
+  },
+  {
+    "id": 3,
+    "title": "Tiger",
+    "src": "tiger.mp4",
+    "thumbnail": "tiger.JPG",
+    "views": "12.3k",
+    "date": "Jan 27, 2020",
+    "creator": "Josh Sanders",
+    "playDuration": 0
+  }
+]
