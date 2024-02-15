@@ -18,9 +18,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
+![main](https://github.com/krgarima/playlist/assets/90110521/50a642d8-8a01-4d7a-bfdd-710d830c389b)
 
 Features -
 
@@ -28,7 +29,7 @@ All the features are built in house (without using third party library) to keep 
 Even the DND feature is built-in house.
 App has been made responsive.
 
-Live Link:
+Live Link: https://playlist-vi.netlify.app/
 
 Tech Stack:
 
