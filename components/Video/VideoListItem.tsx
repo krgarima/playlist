@@ -1,11 +1,11 @@
 "use client";
 
 import { videoContext } from "@/context/video-context";
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 
-const VideoListItem = ({ item, index, dragItem, dragOverItem }) => {
-  const { setSelectedVideo, videoList, setVideoList } =
+const VideoListItem = ({ item, index, dragItem, dragOverItem }: any) => {
+  const { setSelectedVideo, videoList, setVideoList }: any =
     useContext(videoContext);
 
   const handleSort = () => {

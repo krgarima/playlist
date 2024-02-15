@@ -1,7 +1,7 @@
 "use client";
 
 import { videoContext } from "@/context/video-context";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import {
   decreaseVolume,
   handleFullScreen,
@@ -14,7 +14,8 @@ import {
 } from "./playerHelper";
 
 const VideoPlayer = () => {
-  const { videoRef, selectedVideo } = useContext(videoContext);
+  const videoRef: any = useRef(null);
+  const { selectedVideo }: any = useContext(videoContext);
 
   useEffect(() => {
     // Retrieve playback position from localStorage
@@ -26,7 +27,7 @@ const VideoPlayer = () => {
   }, [selectedVideo.id]);
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: any) => {
       // Handle keyboard shortcuts
       switch (event.key) {
         case " ":

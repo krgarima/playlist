@@ -2,18 +2,19 @@ import React, { useContext, useState } from "react";
 import videoDetails from "../../public/data/videoDetails.json";
 import { videoContext } from "@/context/video-context";
 import Image from "next/image";
+import { VideoItem } from "../Video/interfaces";
 
 const Search = () => {
-  const { videoList, setSelectedVideo } = useContext(videoContext);
+  const { videoList, setSelectedVideo }: any = useContext(videoContext);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [videoSuggestions, setVideoSuggestions] = useState(videoDetails);
   const [searchKeyword, setSearchKeyword] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setSearchKeyword(e.target.value);
     setShowSuggestions(true);
     setVideoSuggestions(
-      videoList?.filter((video) =>
+      videoList?.filter((video: VideoItem) =>
         video.title.toLowerCase().match(e.target.value.toLowerCase())
       )
     );
@@ -23,7 +24,7 @@ const Search = () => {
     }
   };
 
-  const handleSelection = (item) => {
+  const handleSelection = (item: VideoItem) => {
     setSelectedVideo(item);
     setShowSuggestions(false);
     setSearchKeyword("");

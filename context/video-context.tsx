@@ -1,12 +1,11 @@
 "use client";
 
 import videoDetails from "../public/data/videoDetails.json";
-import React, { useState, createContext, useRef } from "react";
+import React, { useState, createContext } from "react";
 
-const videoContext = createContext({});
+const videoContext = createContext(null);
 
-const VideoContextProvider = ({ children }) => {
-  const videoRef = useRef(null);
+const VideoContextProvider = ({ children }: any) => {
   const [videoList, setVideoList] = useState(videoDetails);
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
 
@@ -14,7 +13,6 @@ const VideoContextProvider = ({ children }) => {
     <div>
       <videoContext.Provider
         value={{
-          videoRef,
           selectedVideo,
           setSelectedVideo,
           videoList,

@@ -1,9 +1,10 @@
 import React, { useContext, useRef } from "react";
 import VideoListItem from "./VideoListItem";
 import { videoContext } from "@/context/video-context";
+import { VideoItem } from "./interfaces";
 
 const Playlist = () => {
-  const { videoList } = useContext(videoContext);
+  const { videoList }: any = useContext(videoContext);
   const dragItem = useRef(null);
   const dragOverItem = useRef(null);
 
@@ -12,7 +13,7 @@ const Playlist = () => {
       <h2 className="text-2xl font-medium">Watch Next</h2>
       <hr className="bg-slate-300" />
 
-      {videoList.map((item, index) => (
+      {videoList.map((item: VideoItem, index: number) => (
         <VideoListItem
           key={index}
           item={item}

@@ -1,4 +1,6 @@
-const handleFullScreen = (videoRef) => {
+import { VideoItem } from "./interfaces";
+
+const handleFullScreen = (videoRef: any) => {
   if (videoRef.current.requestFullscreen) {
     videoRef.current.requestFullscreen();
   } else if (videoRef.current.mozRequestFullScreen) {
@@ -13,7 +15,7 @@ const handleFullScreen = (videoRef) => {
   }
 };
 
-const handlePause = (selectedVideo, videoRef) => {
+const handlePause = (selectedVideo: VideoItem, videoRef: any) => {
   // Store playback position when video is paused
   localStorage.setItem(
     selectedVideo.id,
@@ -21,14 +23,14 @@ const handlePause = (selectedVideo, videoRef) => {
   );
 };
 
-const handleVideoEnd = (selectedVideo) => {
+const handleVideoEnd = (selectedVideo: VideoItem) => {
   // Clear playback position when video ends
   localStorage.removeItem(selectedVideo.id);
 };
 
 // KEYBOARD CONTROLS
 
-const togglePlayPause = (videoRef) => {
+const togglePlayPause = (videoRef: any) => {
   if (videoRef.current.paused) {
     videoRef.current.play();
   } else {
@@ -36,21 +38,21 @@ const togglePlayPause = (videoRef) => {
   }
 };
 
-const seekForward = (videoRef) => {
+const seekForward = (videoRef: any) => {
   videoRef.current.currentTime += 10; // Seek forward 10 seconds
 };
 
-const seekBackward = (videoRef) => {
+const seekBackward = (videoRef: any) => {
   videoRef.current.currentTime -= 10; // Seek backward 10 seconds
 };
 
-const increaseVolume = (videoRef) => {
+const increaseVolume = (videoRef: any) => {
   if (videoRef.current.volume < 1) {
     videoRef.current.volume += 0.1;
   }
 };
 
-const decreaseVolume = (videoRef) => {
+const decreaseVolume = (videoRef: any) => {
   if (videoRef.current.volume > 0) {
     videoRef.current.volume -= 0.1;
   }
