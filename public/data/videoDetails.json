@@ -1,5 +1,35 @@
 [
   {
+    "id": "77534542",
+    "title": "Trees",
+    "src": "trees.mp4",
+    "thumbnail": "trees.png",
+    "views": "1.2M",
+    "date": "May 27, 2022",
+    "creator": "Michael Jordan",
+    "playDuration": 0
+  },
+  {
+    "id": "15rt5342",
+    "title": "Windchime",
+    "src": "windchime.mp4",
+    "thumbnail": "windchime.png",
+    "views": "1.6k",
+    "date": "May 27, 2022",
+    "creator": "Silvia Pukes",
+    "playDuration": 0
+  },
+  {
+    "id": "153fgfg4",
+    "title": "Drummer boy",
+    "src": "drumBoy.mp4",
+    "thumbnail": "drumBoy.png",
+    "views": "9.2k",
+    "date": "May 27, 2022",
+    "creator": "Brandon Major",
+    "playDuration": 0
+  },
+  {
     "id": "1534542",
     "title": "Beach",
     "src": "beach.mp4",

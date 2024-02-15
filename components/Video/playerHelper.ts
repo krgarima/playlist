@@ -1,3 +1,5 @@
+"use client";
+
 import { VideoItem } from "./interfaces";
 
 const handleFullScreen = (videoRef: any) => {
@@ -47,15 +49,13 @@ const seekBackward = (videoRef: any) => {
 };
 
 const increaseVolume = (videoRef: any) => {
-  if (videoRef.current.volume < 1) {
-    videoRef.current.volume += 0.1;
-  }
+  if (videoRef.current.volume === 1) return;
+  else if (videoRef.current.volume < 1) videoRef.current.volume += 0.05;
 };
 
 const decreaseVolume = (videoRef: any) => {
-  if (videoRef.current.volume > 0) {
-    videoRef.current.volume -= 0.1;
-  }
+  if (videoRef.current.volume === 0) return;
+  else if (videoRef.current.volume > 0.05) videoRef.current.volume -= 0.05;
 };
 
 export {

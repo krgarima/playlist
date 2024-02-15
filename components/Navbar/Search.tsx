@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext, useState } from "react";
 import videoDetails from "../../public/data/videoDetails.json";
 import { videoContext } from "@/context/video-context";
