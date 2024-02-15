@@ -23,7 +23,7 @@ const VideoListItem = ({ item, index, dragItem, dragOverItem }: any) => {
 
   return (
     <li
-      className="list-none h-24 w-full flex gap-x-2 relative"
+      className="list-none h-28 md:h-24 w-full flex gap-x-2 relative text-xs md:text-base bg-white"
       draggable
       onDragStart={(e) => (dragItem.current = index)}
       onDragEnter={(e) => (dragOverItem.current = index)}
