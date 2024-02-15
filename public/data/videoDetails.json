@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Beach",
     "src": "beach.mp4",
-    "thumbnail": "beach.JPG",
+    "thumbnail": "beach.png",
     "views": "1.3k",
     "date": "May 27, 2022",
     "creator": "Kathy Mars",
@@ -13,7 +13,7 @@
     "id": 2,
     "title": "Dessert",
     "src": "dessert.mp4",
-    "thumbnail": "dessert.JPG",
+    "thumbnail": "dessert.png",
     "views": "1.6k",
     "date": "Oct 12, 2012",
     "creator": "Rihanna Mathew",
@@ -23,10 +23,20 @@
     "id": 3,
     "title": "Tiger",
     "src": "tiger.mp4",
-    "thumbnail": "tiger.JPG",
+    "thumbnail": "tiger.png",
     "views": "12.3k",
     "date": "Jan 27, 2020",
     "creator": "Josh Sanders",
+    "playDuration": 0
+  },
+  {
+    "id": 4,
+    "title": "Forest",
+    "src": "forest.mp4",
+    "thumbnail": "forest.png",
+    "views": "11.3k",
+    "date": "Sept 21, 2018",
+    "creator": "Ash Mary",
     "playDuration": 0
   }
 ]
